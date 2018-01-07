@@ -64,3 +64,4 @@ gem 'activemodel'
 gem "mime-types"
 gem "dotenv"
 gem "webpacker"
+gem "sprockets"
