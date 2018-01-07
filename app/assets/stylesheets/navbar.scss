@@ -21,20 +21,22 @@
   color: white;
 }
 
-#navigation {
-  border-bottom: 3px #e6a06f solid;
-  background-color: #33454e;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
 .navbar {
   background-color: #33454e;
 }
 
-.custom_button {
+#btn-override {
+  background-color: #e6a06f;
 
 }
+
+#bootstrap-override {
+  border-bottom: 3px #e6a06f solid;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  clear: both;
+}
+
 
 // bootstrap editing
 
