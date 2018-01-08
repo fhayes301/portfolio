@@ -1,16 +1,17 @@
-<div align="center" class="contact_form_container">
-  <h3>Contact Faye</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' }, :remote =>true do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message,  :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary simple_submit" %>
-    </div>
+<div align="center" class="contact_form_container ">
+  <h1>Contact me:</h1>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' }, :remote =>true do |f| %>
+      <%= f.input :name, :placeholder => 'Name', :required => true %>
+      <%= f.input :email, :placeholder => 'Email', :required => true %>
+      <%= f.input :message, :placeholder => 'Message',  :required => true %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Send message', :class=> "btn btn-primary simple_submit" %>
+      </div>
   <% end %>
 </div>
+<br>
+<br>
