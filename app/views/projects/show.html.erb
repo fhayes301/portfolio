@@ -1,8 +1,12 @@
-<h1>About <%= @project.name %>...</h1>
-<p>Tech Stack: <%= @project.tech_stack %></p>
-<p><%= @project.description %></p>
+<div class='container project_show'>
+  <h1><%= @project.name %></h1>
+  <h3><em>About: </em></h3>
+  <h4><%= @project.description %></h4>
+  <h3><em>Tech Stack: </em> </h3>
+  <h4><%= @project.tech_stack %></h4>
 
 
 
-<%= link_to 'Delete', project_path(@project),  method: :delete, data: { confirm: 'Are you sure?'  } if logged_in? %>
-<%= link_to 'Edit', edit_project_path(@project) if logged_in? %>
+  <%= link_to 'Delete', project_path(@project),  method: :delete, data: { confirm: 'Are you sure?'  } if logged_in? %>
+  <%= link_to 'Edit', edit_project_path(@project) if logged_in? %>
+</div>
